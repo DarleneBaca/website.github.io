@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+
+.navbar{
+	padding-top: 0;
+	padding-bottom: 20px;
+	margin-top: 7px;
+	padding-left: 3px;
+	padding-right: 3px;
+	background-color: #254336;
+	text-align: center;
+	position: relative;
+}
+
+.navbar ul{
+	background-color: #254336;
+	margin: 0px;
+	padding: 0px;
+	height: 100px;
+}
+
+.navbar ul li{
+	float: center;
+	width: 110px;
+}
+
+ul li a{
+	border-left: 0px solid #FFFFFF;
+	padding: .5em;
+	display: block;
+	text-decoration: none;
+}
+
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu{
+	flex: 1;
+	text-align: right;
+}
+
+nav img{
+	width: 200px;
+	left: 80px;
+}
+
+.menu ul li{
+	list-style: inside;
+	display: inline-block;
+	padding: 20px 12px;
+	position: relative;
+}
+
+.menu ul li a{
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+
+.menu ul li:hover{
+	background-color: #838181;
+}
+
+body footer{
+	position: relative;
+	top: 15em;
+	background-color: #254336;
+	text-align: left;
+	color: #FFf;
+	height: 150px;
+	justify-content: space-between;
+	padding-top: 2em;
+}
+
+body footer p{
+	text-align: left;
+}
+
+body footer h3{
+	color: #fff;
+	text-align: center;
+}
+
+.contenedor{
+	display: flex;
+	justify-content: center;
+}
+
+.contenedor a{
+	font-size: 50px;
+	color: #222994;
+}
+
+.mvv-container{
+	max-width: 90%;
+	margin: 50px auto 0;
+}
+
+.mvv-container .mvv-block{
+	margin-bottom: 50px; 
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.mvv-container .mvv-block .image{
+	flex: 0 0 auto;
+	width: 400px;
+}
+
+.mvv-container .mvv-block .image img{
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, .3);
+	transition: .3s;
+	transform: scale(1);
+}
+
+.mvv-container .mvv-block .image:hover img{
+	transform: scale(1.05);
+}
+
+.mvv-container .mvv-block .content{
+	flex: 0 0 auto;
+	width: calc(100% - 400px);
+	box-sizing: border-box;
+	align-self: center;
+}
+
+.mvv-container .mvv-block .content h3{
+	font-weight: 700;
+	font-size: 22px;
+	color: blue;
+	margin-bottom: 10px;
+}
+
+.mvv-container .mvv-block .content p{
+	font-size: 15px;
+}
+
+@media screen and (min-width: 1024px)
+{
+	.mvv-container .mvv-block:nth-child(odd) .image
+	{
+		order: 1;
+	}
+	
+	.mvv-container .mvv-block:nth-child(even) .image
+	{
+		order: 2;
+	}
+	
+	.mvv-container .mvv-block:nth-child(odd) .content
+	{
+		order: 2;
+		padding-left: 30px;
+	}
+	
+	.mvv-container .mvv-block:nth-child(even) .content
+	{
+		order: 1;
+		padding-right: 30px;
+	}
+}
